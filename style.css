@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+.blue_bar {
+    background-color: #3a91cf;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.blue_bar > a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 25%;
+    font-weight: 400;
+    display: inline-block;
+    height: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.blue_bar > a:hover {
+    color: black;
+    font-weight: 700;
+}
+
+
+#okno {
+    width: 700px;
+    height: 250px;
+    text-align: center;
+    padding: 15px;
+    border: 4px solid black;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    display: none;    
+    position: absolute;
+    top: 115%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 2;
+  }
+
+#okno:target {display: block;}
+
+#okno > div > a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    border:solid #3791cf;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
+}
+
+#okno > div > a:hover {
+    background-color: #88236c;
+    color: white;
+    border: solid 4px black;
+}
+
+.logo {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 350px;
+}
+
+.logo_1 > img {
+    position: relative;
+    width: 450px;
+    display: inline-block;
+    padding-right: 25px;
+    top: 15%;
+    padding-left: 75px;
+    right: 6%;
+}
+
+.logo_1 {
+    display: inline-block;
+    position: relative;
+}
+
+.logo_2 {
+    display: inline-block;
+    position: relative;
+}
+
+.logo_2 > p {
+    display: inline-block;
+    position: relative;
+    top: 40%;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #949598;
+}
+
+.logo_3 {
+    display: inline-block;
+    position: relative;
+}
+
+.logo_3 > img {
+    position: relative;
+    height: 320px;
+    padding-top: 20px;
+    padding-left: 75px;
+}
+
+.navig {
+    position: relative;
+    bottom: 60%;
+    background-color: #88236c;
+    z-index: 1;
+    height: fit-content;
+    font-weight: 600;
+    justify-content: center;
+    grid-column-start: 2;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    width: fit-content;
+}
+
+.navig > a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.navig > a:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: black solid 2px;
+}
+
+.photos {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+}
+
+.photo_1 {
+    display: inline-block;
+    background-color: #6e7072;
+    width: 50%;
+    height: 400px;
+    position: relative;
+}
+
+.photo_1 > #t1 {
+    position: relative;
+    top: 15%;
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.photo_1 > #t2 {
+    position: absolute;
+    top: 55%;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.photo_1 > #t3 {
+    position: absolute;
+    top: 80%;
+    right: 38%;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    border: black solid 2px;
+}
+
+.photo_1 > #t3:hover {
+    background-color: #88236c;
+    color: white;
+}
+
+.photo_2 {
+    display: inline-block;
+    width: 50%;
+    height: 400px;
+    background-image: url('wood1.jpg');
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.photo_2 > .cl {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    background-color: rgba(255,255,255,0.5);
+    border: grey solid 4px;
+    border-radius: 15px;
+    right: 18%;
+    top: 8%;
+}
+
+.photo_2 > .cl > p {
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    top: 10%;
+}
+
+.photo_2 > .cl > a {
+    position: absolute;
+    color: gray;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    left: 33%;
+    top: 80%;
+    background-color: white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border: skyblue solid 3px;
+}
+
+.photo_2 > .cl > a:hover {
+    background-color: #88236c;
+    color: white;
+}
+
+.info {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(white, 95%, skyblue);
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.info > div {
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border: solid #d5e3f4;
+    border-width: 4px;
+    border-radius: 20px;
+}
+
+.info > div > a:hover {
+    background-color: white;
+    color: black;
+    border: black solid;
+}
+
+.info > div > img {
+    position: absolute;
+    width: 35%;
+    right: 33%;
+    top: -15%;
+}
+
+.info > div > .info1_p_1 {
+    position: absolute;
+    color: #88236c;
+    font-size: 30px;
+    font-weight: 600;
+    top: 35%;
+    left: 12%;
+}
+
+.info > div > .info1_p_2 {
+    position: absolute;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    top: 52%;
+}
+
+.info > div > .info1_p_3 {
+    position: absolute;
+    color: white;
+    background-color: #88236c;
+    text-decoration: none;
+    font-size: 20px;
+    right: 32%;
+    top: 75%;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid black;
+    border-radius: 10px;
+}
+
+.info > div > .info2_p_1 {
+    position: absolute;
+    color: #88236c;
+    font-size: 30px;
+    font-weight: 600;
+    top: 35%;
+    left: 12%;
+}
+
+.info > div > .info2_p_2 {
+    position: absolute;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    top: 52%;
+}
+
+.info > div > .info2_p_3 {
+    position: absolute;
+    color: white;
+    background-color: #88236c;
+    text-decoration: none;
+    font-size: 20px;
+    right: 32%;
+    top: 75%;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    border: solid black;
+}
+
+.info > div > .info3_p_1 {
+    position: absolute;
+    color: #88236c;
+    font-size: 30px;
+    font-weight: 600;
+    top: 35%;
+    left: 4%;
+}
+
+.info > div > .info3_p_2 {
+    position: absolute;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    top: 52%;
+}
+
+.info > div > .info3_p_3 {
+    position: absolute;
+    color: white;
+    background-color: #88236c;
+    text-decoration: none;
+    font-size: 20px;
+    right: 31%;
+    top: 75%;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid black;
+    border-radius: 10px;
+}
+
+.info_base {
+    position: relative;
+    width: 76%;
+    height: 350px;
+    left: 12%;
+    background-color: white;
+}
+
+.info_base > h1 {
+    color: #3791cf;
+    padding-top: 25px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.info_base > .info_base_1 {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.info_base > h2 {
+    color: black;
+    padding-top: 20px;
+}
+
+.info_base > .info_base_2 {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.info_base > .info_base_3 {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.info_base_3 > a {
+    color: black;
+}
+
+.info_big {
+    position: relative;
+    width: 76%;
+    height: 300px;
+    left: 12%;
+    background-color: white;
+    border-bottom: black solid 4px;
+}
+
+.info_big > h2 {
+    color: black;
+    padding-top: 20px;
+}
+
+.info_big > p {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.info_big > ul {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+}
+
+.info_big > ul > li {
+    position: relative;
+    left: 5%;
+}
+
+.company {
+    position: relative;
+    width: 76%;
+    left: 12%;
+    background-color: white;
+}
+
+.company > p {
+    font-size: 75px;
+    text-align: center;
+    transform: rotate(-15deg);
+    color: red;
+    padding-top: 200px;
+}
